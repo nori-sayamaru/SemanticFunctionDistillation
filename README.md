@@ -1,30 +1,29 @@
 # SemanticFunctionDistillation (SFD)
 ### Project: LogicPurityEngine V1.0 for Next-Gen OS Kernel
 
-## 🍎 Purpose (Objective)
-本プロジェクトは、次世代モバイルOS（iOS/macOS）における「セマンティック・ロジック・レイヤー」のプロトタイプです。
-LLMの出力をOSレベルで検証し、因果関係の整合性（Causality）と構造的定義（Structure）を抽出することで、低レイヤーでの論理フィルタリングを実現します。
+## 🍎 Objective (目的)
+本プロジェクトは、次世代OS（iOS/macOS）における「セマンティック・ロジック・レイヤー」の構築を目的とした実験的プロトタイプです。
+LLMの生成プロセスにおいて、低レイヤー（Kernelレベル）での論理整合性の検証と、不要なノイズの蒸留（Distillation）を実現します。
 
-This project is a prototype of a "Semantic Logic Layer" for next-generation mobile OS (iOS/macOS). It implements kernel-level logical filtering by verifying LLM output consistency and extracting causal structures.
+This project is a prototype of a "Semantic Logic Layer" for next-gen OS (iOS/macOS). It implements kernel-level logical verification and semantic distillation of LLM outputs.
 
-## 🚀 Key Features for Apple Ecosystem Integration
-- **Logic Purity Engine (LPE)**: テキスト背後の論理密度を、ハードウェア資源を最小限に抑えたファジーアルゴリズムで測定。
-- **Zero-Noise Protocol**: OSのユーザー体験を阻害する非論理的なノイズ（Hallucinations）をリアルタイムで検知。
-- **Causality-First Weighting**: 単なる単語検索ではなく、論理の「連鎖」を重視した独自の重み付けアルゴリズム `self.w`。
+## 🚀 LogicPurityEngine V1.0
+このエンジンは、テキスト内の「論理の純度」を測定する独自のアルゴリズムです。
 
-## 🛠 Technical Architecture
-- **Language**: Python (Designed for future Swift/C++ porting)
-- **Engine Core**: `LogicPurityEngine` class
-- **Logic Mapping**: 
-  - `Causality`: Logical conjunctions (ゆえに, したがって, etc.)
-  - `Structure`: Structural definitions (である, 定義, 命題, etc.)
-  - `Verification`: Validation markers (証明, 矛盾, 検証, etc.)
+- **Causality Extraction**: 「ゆえに」「したがって」等の接続詞から論理の連鎖を解析。
+- **Structural Mapping**: 「定義」「命題」等の構造的キーワードを識別。
+- **Zero-Noise Protocol**: 論理を阻害する非論理的なワード（「おにぎり」「猫」等）に対する動的ペナルティ機能。
+
+## 🛠 Technical Details
+- **Architecture**: Object-Oriented Logic Mapping (Python)
+- **Algorithm**: Fuzzy Scoring based on Weighted Logical Chains
+- **Target**: Apple Intelligence integration / On-device Logic Filtering
 
 ## 📈 Roadmap
-- [ ] iOS/macOS Kernel Extension へのプロトタイプ移植。
-- [ ] Apple Neural Engine (ANE) を活用した高速論理推論の最適化。
-- [ ] プライバシーを重視したオンデバイスでのセマンティック蒸留プロセスの構築。
+- [ ] Swift/C++ へのコアロジックの移植。
+- [ ] Apple Neural Engine (ANE) を活用したリアルタイム推論の最適化。
+- [ ] プライバシー保護を重視したオンデバイスでの論理検証プロセスの確立。
 
 ## Author
 - **nori-sayamaru**
-- *Pioneering the intersection of Logical Computing and OS Architecture.*
+- *Exploring the intersection of OS Architecture and Logical Computing.*
